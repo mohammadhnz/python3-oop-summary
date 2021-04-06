@@ -1,6 +1,6 @@
-###Object-Oriented Design
+# Object-Oriented Design
 
-### Introducing object-oriented
+## Introducing object-oriented
 
 Software objects may not be tangible things that you can pick up, sense, or feel, but they are models of something that can do certain things and have certain things done to them. Formally, an object is a collection of data and associated behaviors.
 
@@ -12,24 +12,24 @@ Object-oriented design (OOD) is the process of converting such requirements into
 
 Object-oriented programming (OOP) is the process of converting this perfectly-defined design into a working program that does exactly what the CEO originally requested.
 
-##Objects and classes
+## Objects and classes
 In object-oriented modeling, the term used for a kind of object is class.
 
 UML is very popular among managers, and occasionally disparaged by programmers. The syntax of a UML diagram is generally pretty obvious; you don't have to read a tutorial to (mostly) understand what is going on when you see one. UML is also fairly easy to draw, and quite intuitive. After all, many people, when describing classes and their relationships, will naturally draw boxes with lines between them. Having a standard based on these intuitive diagrams makes it easy for programmers to communicate with designers, managers, and each other.
 
 The association between classes is often obvious and needs no further explanation, but we have the option to add further clarification as needed.
 
-##Data describes objects
+## Data describes objects
 
 Data represents the individual characteristics of a certain object. A class can define specific sets of characteristics that are shared by all objects from that class. Attributes are frequently referred to as members or properties.
 
 Usually, we don't need to be overly concerned with data types at the design stage, as implementation-specific details are chosen during the programming stage. Generic names are normally sufficient for design.
 
-##Behaviors are actions
+## Behaviors are actions
 
 Now that we know what data is, the last undefined term is behaviors. Behaviors are actions that can occur on an object. The behaviors that can be performed on a specific class of object are called methods. At the programming level, methods are like functions in structured programming, but they magically have access to all the data associated with this object. Like functions, methods can also accept parameters and return values.
 
-##Hiding details and creating the public interface
+## Hiding details and creating the public interface
 The key purpose of modeling an object in object-oriented design is to determine what the public interface of that object will be. The interface is the collection of attributes and methods that other objects can access to interact with that object. They do not need, and are often not allowed, to access the internal workings of the object.
 
 This process of hiding the implementation of an object is suitably called information hiding. It is also sometimes referred to as encapsulation, but encapsulation is actually a more all-encompassing term. Encapsulated data is not necessarily hidden. Encapsulation is, literally, creating a capsule (think of creating a time capsule). If you put a bunch of information into a time capsule, and lock and bury it, it is both encapsulated and the information is hidden. On the other hand, if the time capsule, has not been buried and is unlocked or made of clear plastic, the items inside it are still encapsulated, but there is no information hiding.
@@ -42,7 +42,7 @@ Abstraction is another object-oriented term related to encapsulation and informa
 
 abstraction is the process of encapsulating information with separate public and private interfaces. The private interfaces can be subject to information hiding.
 
-##Composition
+## Composition
 
 most design patterns rely on two basic object- oriented principles known as composition and inheritance. Composition is simpler, so let's start with it.
 
@@ -52,13 +52,13 @@ Another way to differentiate between aggregation and composition is to think abo
 
 The composition relationship is represented in UML as a solid diamond. The hollow diamond represents the aggregate relationship.
 
-##Inheritance
+## Inheritance
 
 The is a relationship is formed by inheritance. Inheritance is the most famous, well-known, and over-used relationship in object-oriented programming.
 
 Abstract methods basically say this: We demand this method exist in any non-abstract subclass, but we are declining to specify an implementation in this class.
 
-##Inheritance provides abstraction
+## Inheritance provides abstraction
 
 Polymorphism is the ability to treat a class differently, depending on which subclass is implemented.
 
@@ -79,4 +79,4 @@ As long as two classes have distinct interfaces, it is not normally harmful for 
 
 Inheritance is the perfect solution for obvious is a relationships, but it can be abused. Programmers often use inheritance to share code between two kinds of objects that are only distantly related, with no is a relationship in sight.
 
-###End
+### End
