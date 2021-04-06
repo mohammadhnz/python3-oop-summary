@@ -71,7 +71,7 @@ depending on its mood.
 
 This sort of polymorphism in Python is typically referred to as duck typing: if it walks like a duck or swims like a duck, it's a duck. We don't care if it really is a duck (is a being a cornerstone of inheritance), only that it swims or walks. Geese and swans might easily be able to provide the duck-like behavior we are looking for. This allows future designers to create new types of birds without actually specifying an inheritance hierarchy for aquatic birds. It also allows them to create completely different drop-in behaviors that the original designers never planned for. For example, future designers might be able to make a walking, swimming penguin that works with the same interface without ever suggesting that penguins are ducks.
 
-##Multiple inheritance
+## Multiple inheritance
 
 Object-oriented design can also feature such multiple inheritance, which allows a subclass to inherit functionality from multiple parent classes.
 
